@@ -1,0 +1,139 @@
+/* Gaya untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif; /* Font yang mudah dibaca */
+    background-color: #f4f4f9; /* Warna latar belakang halaman */
+    display: flex; /* Menggunakan Flexbox untuk memposisikan elemen secara fleksibel */
+    justify-content: center; /* Menyusun elemen secara horizontal di tengah */
+    align-items: center; /* Menyusun elemen secara vertikal di tengah */
+    height: 100vh; /* Tinggi halaman diatur menjadi 100% dari tinggi viewport */
+    margin: 0; /* Menghilangkan margin default dari browser */
+    position: relative; /* Mengatur posisi elemen relatif terhadap container */
+}
+
+/* Gaya untuk elemen login */
+.login-container {
+    background-color: #333; /* Latar belakang container login berwarna gelap */
+    padding: 20px; /* Memberikan jarak antara konten dan tepi container */
+    border-radius: 8px; /* Membulatkan sudut container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Memberikan efek bayangan untuk depth */
+    width: 300px; /* Lebar container login */
+    z-index: 1; /* Mengatur z-index agar elemen ini berada di depan elemen lainnya */
+    opacity: 0; /* Awalnya elemen login tidak terlihat */
+    animation: fadeIn 1s forwards; /* Menambahkan animasi fade-in agar elemen login muncul secara perlahan */
+}
+
+/* Gaya untuk judul halaman login */
+h2 {
+    text-align: center; /* Menyusun teks judul di tengah */
+    margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+    color: #f4c542; /* Warna teks judul menggunakan warna emas */
+    font-size: 24px; /* Ukuran font judul */
+}
+
+/* Gaya untuk elemen form */
+form {
+    display: flex; /* Menggunakan Flexbox untuk menyusun elemen form */
+    flex-direction: column; /* Menyusun elemen form secara vertikal */
+}
+
+/* Gaya untuk label input */
+label {
+    margin-bottom: 5px; /* Memberikan jarak di bawah label */
+    color: #fff; /* Warna teks label menjadi putih, kontras dengan latar belakang gelap */
+}
+
+/* Gaya untuk input, select, dan button */
+input, select, button {
+    padding: 10px; /* Memberikan padding di dalam elemen untuk memberi jarak ke konten */
+    margin-bottom: 10px; /* Memberikan jarak antar elemen input */
+    border: 1px solid #ccc; /* Memberikan border dengan warna abu-abu muda */
+    border-radius: 4px; /* Membulatkan sudut elemen */
+    transition: all 0.3s ease; /* Menambahkan transisi halus untuk perubahan properti elemen */
+}
+
+/* Gaya untuk input dan select */
+input, select {
+    background-color: #444; /* Latar belakang input dan select berwarna gelap */
+    color: #fff; /* Warna teks di dalam input dan select menjadi putih */
+    border: 1px solid #666; /* Border dengan warna abu-abu lebih gelap */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #9c1d22; /* Latar belakang tombol berwarna merah gelap */
+    color: white; /* Warna teks tombol menjadi putih */
+    cursor: pointer; /* Menambahkan kursor pointer untuk memberi indikasi bahwa tombol bisa diklik */
+    border: none; /* Menghilangkan border default dari tombol */
+    transition: transform 0.3s ease; /* Menambahkan transisi pada transformasi tombol saat hover */
+}
+
+/* Efek hover untuk tombol */
+button:hover {
+    background-color: #7b171b; /* Mengubah warna latar belakang tombol menjadi lebih gelap saat hover */
+    transform: scale(1.1); /* Memberikan efek zoom pada tombol saat dihover */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%; /* Membuat tabel memenuhi lebar container */
+    border-collapse: collapse; /* Menghilangkan jarak antara border tabel */
+    margin-top: 20px; /* Memberikan jarak di atas tabel */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Memberikan efek bayangan pada tabel */
+    opacity: 0; /* Tabel tidak terlihat pada awalnya */
+    animation: tableIn 1s 0.5s forwards; /* Menambahkan animasi tabel yang muncul perlahan setelah halaman dimuat */
+}
+
+/* Gaya untuk header dan sel tabel */
+table th, table td {
+    padding: 12px; /* Memberikan padding pada sel tabel */
+    text-align: center; /* Menyusun teks di tengah sel tabel */
+    border: 1px solid #666; /* Border untuk sel tabel berwarna abu-abu gelap */
+}
+
+/* Gaya untuk header tabel */
+table th {
+    background-color: #3e3e3e; /* Latar belakang header tabel berwarna gelap */
+    color: #f4c542; /* Warna teks header tabel menggunakan warna emas */
+    font-size: 16px; /* Ukuran font untuk header tabel */
+    text-transform: uppercase; /* Menjadikan teks header tabel menjadi kapital semua */
+}
+
+/* Gaya untuk sel tabel */
+table td {
+    background-color: #555; /* Latar belakang sel tabel berwarna lebih gelap */
+    color: #fff; /* Warna teks sel tabel menjadi putih */
+    font-size: 14px; /* Ukuran font untuk sel tabel */
+}
+
+/* Gaya untuk baris genap tabel */
+table tr:nth-child(even) td {
+    background-color: #444; /* Mengubah latar belakang baris genap menjadi sedikit lebih gelap */
+}
+
+/* Efek hover pada baris tabel */
+table tr:hover td {
+    background-color: #9c1d22; /* Mengubah latar belakang baris yang dihover menjadi merah gelap */
+    transform: scale(1.02); /* Memberikan efek zoom pada baris saat hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus untuk latar belakang dan transformasi */
+}
+
+/* Animasi fadeIn untuk elemen login-container */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Awalnya elemen tidak terlihat */
+    }
+    to {
+        opacity: 1; /* Berakhir dengan elemen terlihat sepenuhnya */
+    }
+}
+
+/* Animasi tableIn untuk tabel */
+@keyframes tableIn {
+    from {
+        opacity: 0; /* Awalnya tabel tidak terlihat */
+    }
+    to {
+        opacity: 1; /* Tabel menjadi terlihat secara perlahan */
+    }
+}
+

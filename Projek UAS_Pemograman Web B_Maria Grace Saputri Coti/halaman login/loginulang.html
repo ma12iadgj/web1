@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi dan Login</title>
+    <link rel="icon" href="/Icon/asrama_harry_potter/gryffindor.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="/halaman login/login.css">
+</head>
+<body>
+    <div class="login-container">
+
+        <!-- Form Login -->
+        <form action="/halaman login/login/login.php" method="POST">
+            <h3>Login Ulang</h3>
+            <input type="hidden" name="action" value="login">
+            
+            <div class="form-group">
+                <label for="user-login">Username:</label>
+                <input type="text" id="user-login" name="user" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password-login">Password:</label>
+                <input type="password" id="password-login" name="password" required>
+            </div>
+            
+            <!-- Tombol login -->
+            <button type="submit">Masuk</button>
+             <!-- Tombol navigasi ke halaman lain -->
+             <a href="/penjelasan siapa itu jk rowling/Jk_Rowling.html" class="button-link">Selanjutnya</a>
+
+        </form>
+    </div>
+</body>
+</html>

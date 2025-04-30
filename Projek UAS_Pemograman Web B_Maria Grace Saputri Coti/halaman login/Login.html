@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Registrasi dan Login</title>
+    <link rel="icon" href="/Icon/asrama_harry_potter/gryffindor.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="/halaman login/login.css">
+</head>
+<body>
+    <div class="login-container">
+
+        <!-- Form Registrasi -->
+        <form action="/halaman login/login/login.php" method="POST">
+            <h3>Registrasi</h3>
+            <input type="hidden" name="action" value="register">
+            
+            <div class="form-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <select id="jenis_kelamin" name="jenis_kelamin" required>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="fakultas">Fakultas:</label>
+                <input type="text" id="fakultas" name="fakultas" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="prodi">Prodi:</label>
+                <input type="text" id="prodi" name="prodi" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="user">Username:</label>
+                <input type="text" id="user" name="user" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <button type="submit">Daftar</button>
+            <!-- Tombol navigasi ke halaman lain -->
+            <a href="/halaman login/loginulang.html" class="button-link">Selanjutnya</a>
+        </form>
+
+    </div>
+</body>
+</html>

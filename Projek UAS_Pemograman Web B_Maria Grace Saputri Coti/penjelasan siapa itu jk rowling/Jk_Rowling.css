@@ -1,0 +1,169 @@
+/* Gaya untuk Body */
+body {
+    font-family: 'Arial', sans-serif; /* Menggunakan font arial untuk tampilan klasik */
+    background-color: #2e2b2b; /* Latar belakang gelap untuk kesan misterius */
+    color: #e1c699; /* Warna teks kuning keemasan agar kontras dengan latar belakang */
+    margin: 0;
+    padding: 20px; /* Memberikan jarak padding di seluruh halaman */
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    text-align: center; /* Memusatkan judul di tengah */
+    font-size: 3em; /* Ukuran font yang besar untuk judul utama */
+    color: #d4af37; /* Warna emas yang elegan untuk judul */
+    text-shadow: 2px 2px 5px #000; /* Menambahkan bayangan untuk membuat teks lebih menonjol */
+    margin-bottom: 20px; /* Memberikan jarak bawah pada judul */
+    transition: transform 0.3s ease; /* Menambahkan transisi halus untuk efek zoom saat hover */
+}
+
+/* Efek saat mouse diarahkan ke judul */
+h1:hover {
+    transform: scale(1.05); /* Efek zoom saat mouse diarahkan */
+}
+
+/* Gaya untuk paragraf */
+p {
+    font-size: 1.2em; /* Ukuran font yang sedikit lebih besar untuk paragraf */
+    line-height: 1.6; /* Menambahkan jarak antar baris untuk kenyamanan membaca */
+    text-align: justify; /* Membuat teks rata kiri dan kanan */
+    padding: 0 20px; /* Menambahkan padding kiri dan kanan untuk teks */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk paragraf */
+    border-radius: 10px; /* Membuat sudut paragraf membulat */
+    padding: 15px; /* Memberikan padding dalam paragraf */
+    transition: transform 0.3s ease; /* Menambahkan transisi halus saat hover */
+}
+
+/* Efek saat mouse diarahkan ke paragraf */
+p:hover {
+    transform: scale(1.02); /* Efek zoom saat mouse diarahkan */
+}
+
+/* Gaya untuk gambar */
+img {
+    display: block; /* Mengatur gambar sebagai blok untuk memusatkan secara otomatis */
+    margin: 20px auto; /* Menambahkan margin di atas dan bawah serta memusatkan gambar */
+    border-radius: 10px; /* Membuat sudut gambar membulat */
+    width: 200px; /* Mengatur lebar gambar */
+    border: 3px solid #d4af37; /* Menambahkan border emas di sekitar gambar */
+}
+
+/* Gaya untuk Tabel */
+table {
+    width: 80%; /* Lebar tabel 80% dari halaman */
+    margin: 20px auto; /* Memberikan margin atas dan bawah serta memusatkan tabel */
+    border-collapse: collapse; /* Menggabungkan border tabel */
+    background-color: #3b3b3b; /* Latar belakang tabel berwarna gelap */
+    color: #d4af37; /* Warna teks di tabel emas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan di tabel untuk kedalaman */
+    border-radius: 8px; /* Membulatkan sudut tabel */
+    overflow: hidden; /* Menghindari elemen keluar dari batas tabel */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan efek transisi untuk zoom dan bayangan */
+}
+
+/* Efek saat mouse diarahkan ke tabel */
+table:hover {
+    transform: scale(1.05); /* Efek zoom saat mouse diarahkan */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Memperbesar bayangan saat hover untuk efek kedalaman */
+}
+
+/* Gaya untuk kolom judul tabel */
+table th {
+    font-size: 1.2em; /* Ukuran font lebih besar untuk header tabel */
+    color: #f0c674; /* Warna header tabel emas cerah */
+    padding: 10px; /* Memberikan padding pada header */
+    background-color: #4d4d4d; /* Latar belakang gelap untuk header */
+    border-bottom: 2px solid #f0c674; /* Garis bawah berwarna emas untuk memisahkan header */
+}
+
+/* Gaya untuk kolom data tabel */
+table td {
+    text-align: center; /* Memusatkan teks dalam kolom data */
+    padding: 15px; /* Padding pada kolom data */
+    font-size: 1em; /* Ukuran font standar untuk kolom data */
+}
+
+/* Gaya untuk link dalam tabel */
+table td a {
+    color: #d4af37; /* Warna emas untuk link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-weight: bold; /* Membuat teks link lebih tebal */
+    transition: transform 0.3s ease; /* Menambahkan transisi halus saat hover */
+}
+
+/* Efek saat mouse diarahkan ke link */
+table td a:hover {
+    color: #f0c674; /* Warna link berubah menjadi lebih cerah saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+    transform: scale(1.1); /* Efek zoom pada link */
+}
+
+/* Gaya saat mouse diarahkan ke baris tabel */
+table tr:hover {
+    background-color: #444444; /* Warna latar belakang berubah saat hover pada baris */
+}
+
+/* Gaya untuk efek link di seluruh halaman */
+a {
+    color: #f0c674; /* Warna emas untuk link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+/* Efek saat hover pada link */
+a:hover {
+    color: #d4af37; /* Warna link berubah menjadi sedikit lebih gelap saat hover */
+    text-decoration: underline; /* Menambahkan garis bawah pada link saat hover */
+    font-weight: bold; /* Menebalkan teks link saat hover */
+    animation: glow 1s infinite; /* Menambahkan efek cahaya pada link saat hover */
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #1a1a1a; /* Warna latar belakang gelap untuk footer */
+    color: #d4af37; /* Warna emas untuk teks footer */
+    text-align: center; /* Menyusun teks footer di tengah */
+    padding: 20px; /* Jarak dalam footer */
+    margin-top: 40px; /* Jarak atas untuk footer */
+    font-size: 1rem; /* Ukuran font untuk footer */
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan untuk footer */
+    position: relative; /* Menjadikan footer relatif untuk penataan posisi */
+    width: 100%; /* Menjaga lebar footer 100% */
+}
+
+
+/* Animasi glow untuk efek link */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37; /* Efek cahaya dengan bayangan emas */
+    }
+    50% {
+        text-shadow: 0 0 20px #f0c674, 0 0 30px #f0c674, 0 0 40px #f0c674; /* Efek lebih terang saat tengah animasi */
+    }
+    100% {
+        text-shadow: 0 0 10px #d4af37, 0 0 20px #d4af37, 0 0 30px #d4af37; /* Kembali ke efek cahaya emas */
+    }
+}
+
+/* Gaya untuk efek latar belakang */
+body:after {
+    content: ""; /* Menambahkan elemen setelah body */
+    position: fixed; /* Menetapkan posisi latar belakang agar tetap di belakang konten */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/Icon/asrama harry potter/hogwarts.jpg') no-repeat center center/cover; /* Gambar latar belakang dari Hogwarts */
+    opacity: 0.2; /* Mengurangi opasitas latar belakang untuk kesan samar */
+    z-index: -1; /* Menempatkan latar belakang di bawah konten utama */
+}
+
+/* Gaya untuk div tambahan */
+div {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #d4af37; /* Border emas di sekitar div */
+    border-radius: 10px; /* Membulatkan sudut div */
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang semi-transparan untuk div */
+    color: #e1c699; /* Warna teks div menjadi kuning */
+    text-align: center; /* Memusatkan teks dalam div */
+}

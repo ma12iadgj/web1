@@ -1,0 +1,135 @@
+/* Reset Umum untuk Semua Elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pengaturan Umum untuk Body */
+body {
+    font-family:'Arial', sans-serif; /* Menggunakan font arial untuk tampilan klasik */
+    background-color: #121212; /* Latar belakang gelap untuk tema Harry Potter */
+    color: white; /* Warna teks putih agar kontras dengan latar belakang gelap */
+    line-height: 1.6; /* Jarak antar baris teks untuk kenyamanan membaca */
+    padding: 20px; /* Memberikan ruang di sekeliling konten */
+}
+
+/* Pengaturan untuk Judul Utama */
+h1 {
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    font-size: 2.5em; /* Ukuran font yang lebih besar untuk judul */
+    margin-bottom: 20px; /* Memberikan jarak di bawah judul */
+    color: #f1c40f; /* Warna emas yang mencolok, sesuai tema Harry Potter */
+}
+
+
+/* Efek saat mouse diarahkan ke judul */
+h1:hover {
+    transform: scale(1.05); /* Efek zoom saat mouse diarahkan */
+}
+
+/* Efek saat mouse diarahkan ke paragraf */
+p:hover {
+    transform: scale(1.02); /* Efek zoom saat mouse diarahkan */
+}
+
+
+/* Container untuk Setiap Asrama (Image Container) */
+.image-container {
+    margin: 20px auto; /* Memberikan jarak atas-bawah dan meratakan ke tengah */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+    width: 90%; /* Lebar kontainer 90% dari lebar layar */
+    max-width: 600px; /* Maksimal lebar kontainer adalah 600px */
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat kontainer di-hover */
+}
+
+.image-container:hover {
+    transform: scale(1.05); /* Efek pembesaran ketika di-hover */
+}
+
+/* Pengaturan untuk Gambar */
+.image-container img {
+    width:50%; /* Menentukan lebar gambar menjadi 50% dari lebar kontainer */
+    border-radius: 15px; /* Memberikan sudut melengkung pada gambar */
+    transition: transform 0.3s ease-in-out; /* Efek transisi saat gambar di-hover */
+}
+
+.image-container img:hover {
+    transform: rotate(10deg); /* Efek rotasi gambar sedikit saat di-hover */
+}
+
+/* Pengaturan untuk Paragraf */
+p {
+    font-size: 1.1em; /* Ukuran font lebih besar dari standar untuk kenyamanan membaca */
+    margin: 10px 0; /* Memberikan jarak atas-bawah pada setiap paragraf */
+}
+
+/* Pengaturan untuk Tombol Kembali */
+.back-button {
+    display: inline-block; /* Menampilkan tombol sebagai elemen blok dalam baris */
+    background-color: #444; /* Latar belakang gelap pada tombol */
+    color: #f39c12; /* Warna teks tombol emas */
+    padding: 10px 20px; /* Padding untuk memberikan ruang di dalam tombol */
+    text-decoration: none; /* Menghapus garis bawah pada teks tombol */
+    border-radius: 5px; /* Memberikan sudut melengkung pada tombol */
+    margin-top: 20px; /* Memberikan jarak atas pada tombol */
+    font-size: 1.2em; /* Ukuran font lebih besar agar mudah dibaca */
+    text-align: center; /* Menyelaraskan teks tombol ke tengah */
+    transition: background-color 0.3s ease; /* Efek transisi pada latar belakang tombol */
+}
+
+.back-button:hover {
+    background-color: #555; /* Efek hover dengan latar belakang yang sedikit lebih terang */
+}
+
+/* Pengaturan untuk Garis Pemisah */
+hr {
+    margin: 40px 0; /* Memberikan jarak atas-bawah pada garis pemisah */
+    border: 0; /* Menghapus batas garis */
+    border-top: 2px solid #444; /* Memberikan garis pemisah dengan warna abu-abu */
+}
+
+/* Pengaturan untuk Setiap Section */
+section {
+    background-color: #222; /* Latar belakang gelap untuk setiap section */
+    padding: 20px; /* Memberikan padding di dalam section */
+    border-radius: 15px; /* Memberikan sudut melengkung pada section */
+    margin-bottom: 20px; /* Memberikan jarak bawah pada section */
+}
+
+/* Pengaturan untuk Sub-Judul dalam Setiap Section */
+section h3 {
+    font-size: 1.7em; /* Ukuran font lebih besar untuk sub-judul */
+    color: #f39c12; /* Warna emas untuk sub-judul */
+}
+
+/* Animasi untuk Efek Glow pada Gambar */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #f39c12, 0 0 10px #f39c12, 0 0 15px #f39c12; /* Efek glow awal */
+    }
+    50% {
+        box-shadow: 0 0 20px #f39c12, 0 0 30px #f39c12, 0 0 50px #f39c12; /* Efek glow yang lebih kuat di tengah */
+    }
+    100% {
+        box-shadow: 0 0 5px #f39c12, 0 0 10px #f39c12, 0 0 15px #f39c12; /* Kembali ke efek glow awal */
+    }
+}
+
+/* Efek Glow pada Gambar Ketika Dihover */
+.image-container img:hover {
+    animation: glow 1.5s ease-in-out infinite alternate; /* Menambahkan animasi glow yang berulang */
+}
+
+/* Gaya untuk efek latar belakang */
+body:after {
+    content: ""; /* Menambahkan elemen setelah body */
+    position: fixed; /* Menetapkan posisi latar belakang agar tetap di belakang konten */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/Icon/asrama harry potter/hogwarts.jpg') no-repeat center center/cover; /* Gambar latar belakang dari Hogwarts */
+    opacity: 0.2; /* Mengurangi opasitas latar belakang untuk kesan samar */
+    z-index: -1; /* Menempatkan latar belakang di bawah konten utama */
+}
